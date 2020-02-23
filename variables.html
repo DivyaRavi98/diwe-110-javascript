@@ -39,21 +39,24 @@
 		document.write('<br>');
 		document.write(contactNumber);
 		
-		/*array implimentation create single array to hold studentName age and contact Number*/
+		/*
+			array implementation . create single array to hold studentName,age,userNumber and contactNumber
+			
+		*/
+		var studentDetails = new Array();
 		
-		var studentsDetails= new Array();
-		studentsDetails[8]= window.prompt('your name');
-		studentsDetails[1]= window.prompt('age');
-		studentsDetails[2]= window.prompt('contact number');
-		studentsDetails[3]= regionCode - studentsDetails[2];
+		studentDetails[0]  = window.prompt('Your Name');
+		studentDetails[1] = window.prompt('your age');
+		studentDetails[2] = window.prompt('contact number');
+		studentDetails[3] = regionCode + studentDetails[2];
 		
-		console.log(studentsDetails);
+		console.log(studentDetails);
+		document.write('<hr>');
+		document.write(studentDetails[0]);
 		document.write('<br>');
-		document.write(studentsDetails[0]);
+		document.write(studentDetails[1]);
 		document.write('<br>');
-		document.write(studentsDetails[1]);
-		document.write('<br>');
-		document.write(studentsDetails[3]);
+		document.write(studentDetails[3]);
 		document.write('<br>');
 		
 		
